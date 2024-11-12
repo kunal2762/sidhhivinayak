@@ -1,0 +1,141 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title Styling */
+.tittle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Column Layout */
+.col-md-6 {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.col-md-6:last-child {
+    margin-right: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* About Section */
+.col-md-6 p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Instructions List */
+.course-grid1 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course-grid1 li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.course-grid1 li i {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+/* Button Styling */
+.online-exam {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.online-exam a {
+    text-decoration: none;
+}
+
+.online-exam .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.online-exam .btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%;
+        margin-right: 0;
+        padding: 15px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    /* Make the title smaller on mobile */
+    .tittle {
+        font-size: 28px;
+    }
+
+    .col-md-6 p {
+        font-size: 14px;
+    }
+
+    /* Adjust the button size for mobile */
+    .online-exam .btn {
+        width: 80%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    /* Adjust the list font size on mobile */
+    .course-grid1 li {
+        font-size: 14px;
+    }
+}
